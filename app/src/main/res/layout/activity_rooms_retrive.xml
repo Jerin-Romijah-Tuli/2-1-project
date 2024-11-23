@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Rooms_Retrive_Activity">
+
+
+
+
+    <TextView
+        android:id="@+id/roomDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:text="  Room Details"
+        android:textColor="@color/primaryColor"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/rooms" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomDetails"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="EnterRoomType"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:id="@+id/retroomType"
+        android:textColor="@color/primaryColor"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/retroomType"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="FloorNo"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:id="@+id/retFloor_r"
+        android:textColor="@color/primaryColor"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/retroomType"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="RoomNo"
+        android:textSize="20sp"
+        android:background="@drawable/border"
+        android:id="@+id/retRoom_r"
+        android:textColor="@color/primaryColor"
+        android:textStyle="italic" />
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.github.clans.fab.FloatingActionMenu
+
+            android:layout_width="33dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="22dp"
+            app:menu_colorNormal="@color/primaryColor"
+            app:menu_colorPressed="@color/primaryColor"
+            app:menu_fab_size="normal"
+            app:menu_icon="@drawable/ic_baseline_format_list_bulleted_24"
+            app:menu_openDirection="up"
+            app:menu_showShadow="true" >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/editbutton_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_edit_24"
+                app:fab_showShadow="true"
+                app:fab_colorNormal="@color/green"
+                app:fab_size="mini"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/deletebutton_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_delete_24"
+                app:fab_showShadow="true"
+                app:fab_colorNormal="@color/red"
+                app:fab_size="mini"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

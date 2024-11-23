@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard_rooms"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="40dp"
+    app:cardElevation="8dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recRoomtype"
+        android:text="RoomType"
+        android:textColor="@color/primaryColor"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/recFloorno_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recRoomtype"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:text="Floorno"
+        android:textSize="20dp"
+        android:textColor="@color/primaryColor"
+        />
+
+    <TextView
+        android:id="@+id/recRoomno_r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recFloorno_r"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Roomno"
+        android:textSize="20dp"
+        android:textColor="@color/primaryColor"
+        />
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
